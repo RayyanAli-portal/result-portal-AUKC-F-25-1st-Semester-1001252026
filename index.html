@@ -110,7 +110,8 @@ function checkResult(){
     totalQualityPoints += gpa * credit;
     totalCredits += credit;
 
-    rows += `<tr><td>${sub}</td><td>${marks}</td><td>${grade}</td><td>${gpa}</td><td>${credit}</td></tr>`;
+    const quality = (gpa * credit).toFixed(2);
+    rows += `<tr><td>${sub}</td><td>${marks}</td><td>${grade}</td><td>${gpa}</td><td>${credit}</td><td>${quality}</td></tr>`;
   }<tr><td>${sub}</td><td>${marks}</td><td>${grade}</td><td>${gpa}</td><td>${credit}</td></tr>`;
   }</td><td>${s.subjects[sub]}</td></tr>`;
   }
